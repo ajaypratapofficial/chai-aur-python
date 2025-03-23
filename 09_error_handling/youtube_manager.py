@@ -3,8 +3,9 @@ import json
 
 def load_data():
     try:
-        with open('youtube.txt', 'r') as file:
-            test = json.load(file)
+        with open('youtube.txt', 'r') as file:  
+            # here we have used r, not used w because if not then it will create a new file
+            test = json.load(file) # it will load the data from the file and convert into json
             # print(type(test))
             return test
     except FileNotFoundError:
@@ -74,10 +75,13 @@ def main():
                 delete_video(videos)
             case '5':
                 break
+            # if other than 1,2,3,4,5 is entered then it will print invalid choice
             case _:
                 print("Invalid Choice")
 
+
+# __ is called dunder
 if __name__ ==  "__main__":
     main() 
-
+# this is the entry point of the program
 

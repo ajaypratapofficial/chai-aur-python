@@ -1,20 +1,20 @@
 username = "chaiaurcode"
 
 def func():
-    # username = "chai"
-    print(username)
+    username = "chai"
+    print(username) # chai
 
-print(username)
-func()
+print(username) # chaiaurcode
+func() # chai --> it will call func()
 
 
 x = 99 
-# def func2(y):
-#     z = x + y
-#     return z
+def func2(y):
+    z = x + y
+    return z
 
-# result = func2(1)
-# print(result)
+result = func2(1)
+print(result)
 
 # def func3():
 #     global x
@@ -24,7 +24,7 @@ x = 99
 # print(x)
 
 
-
+x=99
 def f1():
     x = 88
     def f2():
@@ -32,6 +32,8 @@ def f1():
     return f2
 myResult = f1()
 myResult()
+# will print 88
+
 
 
 def chaicoder(num):

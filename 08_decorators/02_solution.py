@@ -1,3 +1,4 @@
+# Write a decorator that prints a log message before calling the decorated function. The log message should include the name of the function, the positional arguments, and the keyword arguments.
 
 def debug(func):
     def wrapper(*args, **kwargs):

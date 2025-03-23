@@ -1,3 +1,5 @@
+# Create a decorator that will print out how long a function took to run
+
 import time
 
 def timer(func):
@@ -10,6 +12,7 @@ def timer(func):
     return wrapper
 
 
+# example_function will be passed as argument to timer first
 @timer
 def example_function(n):
     time.sleep(n)
